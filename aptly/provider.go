@@ -23,8 +23,8 @@ func Provider() terraform.ResourceProvider {
 		},
 
 		DataSourcesMap: map[string]*schema.Resource{
-			"aptly_repo":            dataSourceAptlyRepo(),
-			"aptly_publish":         dataSourceAptlyPublish(),
+			"aptly_repos":	  dataSourceAptlyRepos(),
+			"aptly_publish":  dataSourceAptlyPublish(),
 		},
 	}
 
