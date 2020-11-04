@@ -32,10 +32,10 @@ func dataSourceAptlyRepos() *schema.Resource {
 }
 
 func dataSourceAptlyReposRead(d *schema.ResourceData, meta interface{}) error {
-	aptlyClient := m.(*client.Client)
+	aptlyClient := meta.(*client.Client)
 	name := d.Get("name").(string)
 
-	d.Set("name", str)
+	d.Set("name", String())
 
 	return nil
 }
