@@ -32,3 +32,14 @@ func Provider() terraform.ResourceProvider {
 
 	return p
 }
+
+var descriptions map[string]string
+
+func init() {
+	descriptions = map[string]string{
+		"token": "The OAuth token used to connect to Aptly. " +
+			"`anonymous` mode is enabled if `token` is not configured.",
+
+		"base_url": "The Aptly Base API URL",
+	}
+}
