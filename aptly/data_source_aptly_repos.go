@@ -1,10 +1,6 @@
 package aptly
 
 import (
-	"context"
-	"log"
-	"strconv"
-
 	"github.com/hashicorp/terraform-plugin-sdk/helper/schema"
 )
 
