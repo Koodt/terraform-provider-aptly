@@ -2,6 +2,7 @@ package aptly
 
 import (
 	"github.com/hashicorp/terraform-plugin-sdk/helper/schema"
+	"github.com/Koodt/terraform-provider-aptly/client"
 )
 
 func dataSourceAptlyRepos() *schema.Resource {
