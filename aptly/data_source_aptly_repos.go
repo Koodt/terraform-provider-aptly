@@ -1,6 +1,8 @@
 package aptly
 
 import (
+	"fmt"
+
 	"github.com/hashicorp/terraform-plugin-sdk/helper/schema"
 	"github.com/Koodt/terraform-provider-aptly/client"
 )
